@@ -12083,7 +12083,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery, $) {
 window._ = __webpack_require__(33);
 
 /**
@@ -12111,7 +12111,7 @@ window.Vue = __webpack_require__(37);
  */
 
 window.axios = __webpack_require__(12);
-
+window.Laravel = { csrfToken: $('meta[name=csrf-token]').attr("content") };
 window.axios.defaults.headers.common = {
   'X-CSRF-TOKEN': window.Laravel.csrfToken,
   'X-Requested-With': 'XMLHttpRequest'
@@ -12129,7 +12129,7 @@ window.axios.defaults.headers.common = {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(2)))
 
 /***/ }),
 /* 32 */
